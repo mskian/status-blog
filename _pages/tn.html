@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /tn.json
+---
+
+{% for tamilnadu in site.data.tamilnadu %}
+    {
+      "state" : "{{ tamilnadu.state }}",
+      "active" : "{{ tamilnadu.active }}",
+      "confirmed" : "{{ tamilnadu.confirmed }}",
+      "deaths" : "{{ tamilnadu.deaths }}",
+      "recovered" : "{{ tamilnadu.recovered }}",
+      "lastupdatedtime" : "{{ tamilnadu.lastupdatedtime }}"
+    } {% unless forloop.last %},{% endunless %}
+{% endfor %}

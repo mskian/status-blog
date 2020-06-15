@@ -1,0 +1,89 @@
+title: San Status
+logo: /assets/icons/Icon-72.png
+description: Santhosh Veer - Status and Text notes.
+lang: en
+timezone: Asia/Kolkata
+author:
+  name: "Santhosh Veer"
+  twitter: "santhoshveerece"
+  email: "me@santhoshveer.com"
+  url: "https://status.santhoshveer.com"
+
+version: 8
+baseurl:
+url: https://status.santhoshveer.com
+cdn: https://bn.santhoshveer.com
+
+email: me@santhoshveer.com
+
+markdown: kramdown
+highlighter: none
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+
+source: .
+destination: ./_site
+permalink: /:title/
+paginate: 3
+paginate_path: /page/:num/
+
+feed:
+  path: atom.xml
+
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+twitter:
+  username: santhoshveerece
+  card: summary
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
+      image: /assets/san-status-thumb.jpg
+
+jekyll_compose:
+  default_front_matter:
+    posts:
+      description:
+      permalink:
+      author:
+      image:
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+  - .htaccess
+
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- .sass-cache
+- LICENCE.md
+- .bundle
+- .asset-cache
+- deploy.sh
+- server.sh
+- Rakefile.rb
+
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-compose
+  - jekyll-feed

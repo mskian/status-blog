@@ -1,0 +1,319 @@
+---
+layout: null
+title: Coronavirus Update (Live) - Novel COVID India Status
+description: Coronavirus Update (Live) - track the COVID-19 India Status.
+image: "/assets/sanstatus-covid-19.jpg"
+permalink: /india/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
+<meta name="HandheldFriendly" content="True" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="San Status">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="San Status">
+<link rel="shortcut icon" href="{{site.cdn}}/assets/icons/Icon-48.png"/>
+
+<link rel="apple-touch-icon" href="{{site.cdn}}/assets/icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{site.cdn}}/assets/icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="{{site.cdn}}/assets/icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{{site.cdn}}/assets/icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="{{site.cdn}}/assets/icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="{{site.cdn}}/assets/icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="{{site.cdn}}/assets/icons/Icon-512.png">
+
+<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% seo title=false %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/css/main.css?v={{ site.version }}">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables-bulma@1.0.1/css/dataTables.bulma.min.css" integrity="sha256-05owdgJW8yVIFFvZjoJo73AJXkn5K+E2NShknOwPQow=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<style>
+.dataTables_filter {
+text-align: left !important;
+}
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- DNS Prefetch -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="//bn.santhoshveer.com">
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<link href="{{site.baseurl}}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />	
+<link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+{% if jekyll.environment == 'production' %}{% include analytics.html %}{% endif %}
+
+</head>
+<body>
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+<a class="navbar-item" href="/"><img src="{{site.cdn}}/assets/icons/Icon-72.png" alt="Status Blog"/></a>
+<a role="button" class="navbar-burger burger" aria-label="menu" data-target="navMenu">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div id="navMenu" class="navbar-menu">
+<div class="navbar-end">
+<a class="navbar-item" href="/">Home</a>
+<a class="navbar-item" href="/covid/">World Status</a>
+<a class="navbar-item" href="/country/">Country</a>
+</div>
+</div>
+</nav>
+
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-half">
+<h2 class="has-text-weight-medium has-text-centered">Coronavirus Update (Live) - india Status</h2>
+<br>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="columns is-centered">
+<div class="column is-three-fifths">
+<h2 id="one" class="has-text-weight-medium has-text-centered">Full State List</h2>
+<br>
+<div class="table-container">
+<table id="noveldata" class="table">
+<thead>
+<tr>
+<th class="strong">State</th>
+<th class="strong">Active</th>
+<th class="strong">Confirmed</th>
+<th class="strong">Deaths</th>
+<th class="strong">Recovered</th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container content app">
+<div class="columns is-centered">
+<div class="column column is-two-fifths">
+<h2 class="has-text-weight-medium has-text-centered">Total cases</h2>
+<br>
+<div class="notice"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-half">
+<p class="has-text-centered" style="color:red;">
+Stay at Home - Wash your Hands with Soap - Have a Healthy Life
+</p>
+</div>
+</div>
+</div>
+</section>
+<br>
+
+<footer class="footer">
+<div class="content has-text-centered">
+<div class="buttons is-centered">
+<a class="button join-more is-link is-rounded" id="installPWA" onclick="installPWA()">💛 Install App</a>
+</div>
+<p class="content has-text-centered">
+🔮 Built and packed using covid19india.org API - Datatables and Jekyll - Hosted on Linode</a>
+</p>
+<p>📦 COVID-19 Live Updates 🔴</p>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js" integrity="sha256-L4cf7m/cgC51e7BFPxQcKZcXryzSju7VYBKJLOKPHvQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables-bulma@1.0.1/js/dataTables.bulma.min.js" integrity="sha256-SF1o7Y4Baxhg3LxBa27T6f3+IlpkZ2uIM4elv+SGxmo=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+    var table = $('#noveldata').DataTable({
+        "order": [[ 1, 'desc' ]],
+        "DeferRender": true,
+        "ajax": {
+            "url": "https://api.covid19india.org/data.json",
+            "dataSrc": "statewise"
+        },
+
+        "language": {
+            "loadingRecords": "Please wait - Fetch india Data..."
+        },
+
+        "columnDefs": [{
+
+            "aTargets": [1, 2, 3, 4],
+            "fnCreatedCell": function(nTd, sData, oData, iRow, iCol) {
+                if (sData < "10") {
+                    $(nTd).css('color', 'green')
+                    $(nTd).css('font-weight', 'bold')
+                }
+                else if (sData > "10") {
+                    $(nTd).css('color', 'red')
+                    $(nTd).css('font-weight', 'bold')
+                }
+                else if (sData == "10") {
+                    $(nTd).css('color', 'red')
+                    $(nTd).css('font-weight', 'bold')
+                }
+            }
+        }],
+
+        "columns": [{
+                "data": "state"
+            },
+            {
+                "data": "active"
+            },
+            {
+                "data": "confirmed"
+            },
+            {
+                "data": "deaths"
+            },
+            {
+                "data": "recovered"
+            }
+        ]
+    });
+    // setInterval(function() {
+        // table.ajax.reload();
+    // }, 120000);
+    setInterval(function() {
+        table.ajax.url( 'https://api.covid19india.org/data.json' ).load();
+    }, 120000);
+});
+const appNotice = $('.app .notice');
+appNotice.html('<p>Fetching the Total Data 📦 ...</p>');
+$(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.covid19india.org/data.json",
+            dataType: 'json',
+            async: true,
+            cache: false,
+            success: function(data) {
+                console.log('Fetch DATA: ', data.statewise);
+                    appNotice.empty();
+                    let mvstate = data.statewise[0].state;
+                    let mvactive = data.statewise[0].active;
+                    let mvconfirmed = data.statewise[0].confirmed;
+                    let mvdeaths = data.statewise[0].deaths;
+                    let mvrecovered = data.statewise[0].recovered;
+                    let mvlastupdatedtime = data.statewise[0].lastupdatedtime;
+                    $(document).ready(function() {
+                        $('td').each(function() {
+                            var score = parseInt($(this).text());
+                            if (score > "10") {
+                                $(this).css('color', 'red');
+                            } else if (score < "10") {
+                                $(this).css('color', 'green');
+                            } else if (score == "10") {
+                                $(this).css('color', 'red');
+                            }
+                        })
+                    });
+                    appNotice.append('<table><tbody><tr><th>Over All</th><td><b>' + mvstate + '</b></td></tr><tr><th>Active Cases</th><td><b>' + mvactive + '</b></td></tr><tr><th>Confirmed</th><td><b>' + mvconfirmed + '</b></td></tr><tr><th>Total Deaths</th><td><b>' + mvdeaths + '</b></td></tr><tr><th>Recovered</th><td><b>' + mvrecovered + '</b></td></tr></tbody></table>');
+                }
+        })
+});
+(function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+    });
+})();
+if ('serviceWorker' in navigator) {	
+    window.addEventListener('load', function() {	
+        navigator.serviceWorker.register('/sw.js')	
+            .then(function(registration) {	
+                console.log('SuperPWA service worker ready');	
+                registration.update();	
+            })	
+            .catch(function(error) {	
+                console.log('Registration failed with ' + error);	
+            });	
+    });	
+}
+let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                localStorage.setItem('pwaInstalled', 'yes')
+                pwaInstalled = true
+            }
+            if (window.navigator.standalone === true) {
+                localStorage.setItem('pwaInstalled', 'yes')
+                pwaInstalled = true
+            }
+            if (pwaInstalled) {
+                document.getElementById('installPWA').style.display = 'none'
+            } else {
+                document.getElementById('installPWA').style.display = 'inline-flex'
+            }
+            let deferredPrompt = null
+            window.addEventListener('beforeinstallprompt', (e) => {
+                deferredPrompt = e
+            })
+            async function installPWA() {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt()
+                    deferredPrompt.userChoice.then(({
+                        outcome
+                    }) => {
+                        if (outcome === 'accepted') {
+                            console.log('Your PWA has been installed')
+                        } else {
+                            console.log('User chose to not install your PWA')
+                        }
+                        deferredPrompt = null
+                    })
+                }
+            }
+            window.addEventListener('appinstalled', (evt) => {
+                localStorage.setItem('pwaInstalled', 'yes')
+                pwaInstalled = true
+                document.getElementById('installPWA').style.display = 'none'
+            })
+</script>
+
+</body>
+</html>

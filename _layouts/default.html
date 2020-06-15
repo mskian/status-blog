@@ -1,0 +1,92 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
+<meta name="HandheldFriendly" content="True" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="San Status">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="San Status">
+<link rel="shortcut icon" href="{{site.cdn}}/assets/icons/Icon-48.png"/>
+
+<link rel="apple-touch-icon" href="{{site.cdn}}/assets/icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{site.cdn}}/assets/icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="{{site.cdn}}/assets/icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{{site.cdn}}/assets/icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="{{site.cdn}}/assets/icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="{{site.cdn}}/assets/icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="{{site.cdn}}/assets/icons/Icon-512.png">
+
+<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% seo title=false %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/css/main.css?v={{ site.version }}">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//bn.santhoshveer.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<link href="https://use.fontawesome.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
+<link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+<link href="https://cdn.jsdelivr.net" rel="preconnect" crossorigin>
+
+<link href="{{site.baseurl}}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+<link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+{% if jekyll.environment == 'production' %}{% include analytics.html %}{% endif %}
+
+</head>
+<body>
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+<a class="navbar-item" href="/"><img src="{{site.cdn}}/assets/icons/Icon-72.png" alt="San Status"/></a>
+<a role="button" class="navbar-burger burger" aria-label="menu" data-target="navMenu">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div id="navMenu" class="navbar-menu">
+<div class="navbar-end">
+<a class="navbar-item" href="/">Home</a>
+<a class="navbar-item" href="/about/">About</a>
+<a class="navbar-item" href="/contact/">Contact</a>
+</div>
+</div>
+</nav>
+
+<main>
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-three-fifths">
+
+<article>
+{{ content }}
+</article>
+
+</div>
+</div>
+</div>
+</section>
+</main>
+
+{% include footer.html %}

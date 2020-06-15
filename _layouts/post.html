@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1 class="title has-text-weight-medium has-text-centered">{{page.title}}</h1>
+
+<hr>
+
+<div class="has-text-centered">
+{% if page.author %}
+<span class="post-author">Posted by {{page.author}}</span>
+{% endif %} &nbsp;&nbsp;
+<time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">Posted on - {{ page.date | date_to_long_string }}</time>
+</div>
+
+<br>
+
+<div class="post-content">
+{{content}}
+</div>
+
+<br>
+
+{% if page.last_modified_at %}
+<time class="post-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">last Updated at - {{ page.last_modified_at | date_to_long_string }}</time>
+{% endif %} 
+
+<br>
+<hr>

@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<h1 class="title has-text-weight-medium has-text-centered">{{site.title}} 😊</h1>
+
+<hr>
+<br>
+
+<div class="container">
+<h3><i class="fas fa-virus"></i> COVID-19 - Live Update <i class="fas fa-hand-holding-water"></i></h3>
+<div class="table-container">
+<table class="table">
+<thead>
+<tr>
+<th class="strong">ID</th>
+<th class="strong">Status</th>
+<th class="strong">Link</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td>🗺 World Status</td>
+<td>
+<a href="https://status.santhoshveer.com/covid/">Open Now</a>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>📊 Country Wise</td>
+<td>
+<a href="https://status.santhoshveer.com/country/">Open Now</a>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇮🇳 India</td>
+<td>
+<a href="https://status.santhoshveer.com/india/">Open Now</a>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🇮🇳 Tamil nadu</td>
+<td>
+<a href="https://status.santhoshveer.com/tamilnadu/">Open Now</a>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🇮🇳 Tamil Nadu District Status</td>
+<td>
+<a href="https://status.santhoshveer.com/tndistrict/">Open Now</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<hr>
+
+{% for post in paginator.posts %}
+<h2 class="is-title home-title"><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{post.title}}</a></h2>
+
+{% if post.author %}
+<p>
+<span class="post-author">Posted by {{post.author}}</span>
+{% endif %} &nbsp;&nbsp;
+<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">Posted on - {{ post.date | date_to_long_string }}</time>
+</p>
+
+<hr>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="level level-item has-text-centered" role="navigation" aria-label="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev &nbsp;&nbsp;</a>
+  {% else %}
+    <span>&nbsp;&nbsp; &laquo; Prev &nbsp;&nbsp;</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span>{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{site.baseurl}}/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&nbsp;&nbsp; Next &raquo;</a>
+  {% else %}
+    <span>&nbsp;&nbsp; Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

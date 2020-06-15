@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /district.json
+---
+
+[
+{% for district in site.data.district %}
+    {
+      "district" : "{{ district.district}}",
+      "confirmed" : "{{ district.confirmed}}"
+    } {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

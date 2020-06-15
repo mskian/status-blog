@@ -1,0 +1,53 @@
+<footer class="footer">
+<div class="content has-text-centered">
+<div class="buttons is-centered">
+<a class="button join-more is-link is-rounded" id="installPWA" onclick="installPWA()">💛 Install App</a>
+</div>
+<p class="content has-text-centered">🔮 Crafted by <a href="https://www.facebook.com/santhoshveercom" target="_blank" rel="nofollow noopener">Santhosh Veer</a> - Built on Jekyll - Hosted on Linode</p>
+<p><small>Last Build at: {{ site.time | date_to_rfc822 }}</small></p>
+<p><i class="far fa-copyright"></i> 2020 San Status 😁</p>
+<P class="social-profile">
+<a href="https://feedly.com/i/subscription/feed/https://status.santhoshveer.com/atom.xml" class="rssicon" title="RSS Feed" target="_blank" rel="nofollow noopener"><i class="fas fa-rss-square"></i></a>
+<a href="https://twitter.com/santhoshveerece" class="twittericon" title="Follow us on Twitter" target="_blank" rel="nofollow noopener"><i class="fab fa-twitter"></i></a>
+<a href="https://www.facebook.com/santhoshveercom" class="fbicon" title="Follow us on Facebook" target="_blank" rel="nofollow noopener"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/santhoshveerece/" class="instagram" title="Follow us on Instagram" target="_blank" rel="nofollow noopener"><i class="fab fa-instagram"></i></a>
+</P>
+</div>
+</footer>
+
+<script>
+(function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+    });
+})();
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+                console.log('SuperPWA service worker ready');
+                registration.update();
+            })
+            .catch(function(error) {
+                console.log('Registration failed with ' + error);
+            });
+    });
+}
+</script>
+<script src="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/js/app.js?v={{ site.version }}" defer></script>
+<script src="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/js/flying-pages.min.js?v={{ site.version }}" defer></script>
+<script>
+window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: ["\/ghost", "\/ghost\/#", "\/p\/", "\/signup\/", "\/signin\/", "\/account\/", "#signout", "\/public\/members.js", "?action=signin", "sw.js", "?action=signup", "#", ".png", ".jpeg", ".jpg", ".gif", ".svg", ".json"],
+    maxRPS: 3,
+    hoverDelay: 50
+};
+</script>
+
+</body>
+</html>
