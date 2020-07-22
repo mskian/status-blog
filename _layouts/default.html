@@ -8,7 +8,7 @@ layout: compress
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="HandheldFriendly" content="True" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 <meta name="theme-color" content="#ffffff">
@@ -30,10 +30,10 @@ layout: compress
 <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 {% seo title=false %}
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
 <link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/css/main.css?v={{ site.version }}">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 <link rel="dns-prefetch" href="//use.fontawesome.com">
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
@@ -41,11 +41,6 @@ layout: compress
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//bn.santhoshveer.com">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-
-<link href="https://use.fontawesome.com" rel="preconnect" crossorigin>
-<link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
-<link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-<link href="https://cdn.jsdelivr.net" rel="preconnect" crossorigin>
 
 <link href="{{site.baseurl}}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
 <link rel="manifest" href="{{site.baseurl}}/manifest.json">
