@@ -33,14 +33,6 @@ Header set Pragma "no-cache"
 Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </Files>
 
-<Files tn.json >
-Header set "Cache-Control" 'max-age 600'
-</Files>
-
-<Files district.json >
-Header set "Cache-Control" 'max-age 600'
-</Files>
-
 <IfModule mod_rewrite.c>
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
