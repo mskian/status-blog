@@ -2,6 +2,7 @@
 layout: post
 title: COVID-19 - Coronavirus Update (Live) 🔵
 date: 2020-03-22 21:33 +0530
+last_modified_at: 2020-07-22 15:07:28 +0530
 description: COVID-19 - Coronavirus Update (Live) - Status and Reports.
 permalink: /covid-status/
 author: Santhosh Veer
@@ -47,20 +48,6 @@ Here are the List of Web Pages for Follow the <i class="fas fa-virus"></i> Coron
 <td>🇮🇳 India</td>
 <td>
 <a href="https://status.santhoshveer.com/india/">Open Now</a>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>🇮🇳 Tamil nadu</td>
-<td>
-<a href="https://status.santhoshveer.com/tamilnadu/">Open Now</a>
-</td>
-</tr>
-<tr>
-<td>5</td>
-<td>🇮🇳 Tamil Nadu District Status</td>
-<td>
-<a href="https://status.santhoshveer.com/tndistrict/">Open Now</a>
 </td>
 </tr>
 </table>
