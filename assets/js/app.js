@@ -25,7 +25,7 @@ async function installPWA() {
             if (outcome === 'accepted') {
                 console.log('Your PWA has been installed')
             } else {
-                console.log('User chose to not install your PWA')
+                console.log('User choose to not install your PWA')
             }
             deferredPrompt = null
         })

@@ -66,7 +66,6 @@ sass:
 
 include:
   - _pages
-  - .htaccess
 
 exclude:
 - README.md
@@ -79,6 +78,7 @@ exclude:
 - deploy.sh
 - server.sh
 - Rakefile.rb
+- .htaccess
 
 future: true
 plugins:
