@@ -79,6 +79,7 @@ exclude:
 - server.sh
 - Rakefile.rb
 - .htaccess
+- api
 
 future: true
 plugins:
