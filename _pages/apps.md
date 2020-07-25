@@ -15,31 +15,31 @@ permalink: /apps/
 <tr>
 <td>Facebook Video Downloader</td>
 <td>
-<a class="button join-more is-success is-rounded" href="/fbvid/" target=_blank rel="noopener noreferrer">Open Now</a>
+<a class="button join-more is-success is-rounded" href="/fbvid/">Open Now</a>
 </td>
 </tr>
 <tr>
 <td>instagram Post image Downloader</td>
 <td>
-<a class="button join-more is-success is-rounded" href="/instapl/" target=_blank rel="noopener noreferrer">Open Now</a>
+<a class="button join-more is-success is-rounded" href="/instapl/">Open Now</a>
 </td>
 </tr>
 <tr>
 <td>instagram Post Video Downloader</td>
 <td>
-<a class="button join-more is-success is-rounded" href="/instavd/" target=_blank rel="noopener noreferrer">Open Now</a>
+<a class="button join-more is-success is-rounded" href="/instavd/">Open Now</a>
 </td>
 </tr>
 <tr>
 <td>instagram IGTV Video Downloader</td>
 <td>
-<a class="button join-more is-success is-rounded" href="/instavd/" target=_blank rel="noopener noreferrer">Open Now</a>
+<a class="button join-more is-success is-rounded" href="/instavd/">Open Now</a>
 </td>
 </tr>
 <tr>
 <td>instagram DP Downloader</td>
 <td>
-<a class="button join-more is-success is-rounded" href="/instadp/" target=_blank rel="noopener noreferrer">Open Now</a>
+<a class="button join-more is-success is-rounded" href="/instadp/">Open Now</a>
 </td>
 </tr>
 <tr>
