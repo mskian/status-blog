@@ -43,6 +43,12 @@ permalink: /apps/
 </td>
 </tr>
 <tr>
+<td>instagram Reels Video Downloader</td>
+<td>
+<a class="button join-more is-success is-rounded" href="/instavd/">Open Now</a>
+</td>
+</tr>
+<tr>
 <td>Live Cricket Score API (SOON)</td>
 <td>
 <a class="button join-more is-success is-rounded" href="/">Open Now</a>
