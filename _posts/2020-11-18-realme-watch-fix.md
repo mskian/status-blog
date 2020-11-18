@@ -37,6 +37,8 @@ November 5 Got a new update Finally GPS issue was Fixed but after a Some days, I
 
 I check Every permission of the APP Everything is Perfect but How I fix it?
 
+## Realme Watch Fix Steps are not Counted
+
 - Open `Manage Apps > Realme Link App > Permissions`
 - Enable Body Sensors Permission and Close it
 - Next `ON` the Bluetooth - Open app > Connect Watch and Sync the data
