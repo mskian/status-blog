@@ -34,9 +34,9 @@ permalink: /india/
 <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 {% seo title=false %}
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
 <link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn }}{% endif %}/assets/css/main.css?v={{ site.version }}">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables-bulma@1.0.1/css/dataTables.bulma.min.css" integrity="sha256-05owdgJW8yVIFFvZjoJo73AJXkn5K+E2NShknOwPQow=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
