@@ -1,6 +1,6 @@
 # San Status 😊
 
-[![Build Status](https://travis-ci.org/mskian/status-blog.svg?branch=master)](https://travis-ci.org/mskian/status-blog) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784619262-a0febe3c1705a879cc68d9b9?label=Website)  
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784619262-a0febe3c1705a879cc68d9b9?label=Website)  
 
 A Simple Static Site Build using Jekyll 📦  
 
