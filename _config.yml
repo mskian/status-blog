@@ -12,7 +12,7 @@ author:
 version: 9
 baseurl:
 url: https://status.santhoshveer.com
-cdn: https://bn.santhoshveer.com
+cdn: https://status.santhoshveer.com
 
 email: me@santhoshveer.com
 
